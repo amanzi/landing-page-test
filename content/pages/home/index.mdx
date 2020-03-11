@@ -1,49 +1,50 @@
 ---
 title: Home
-excerpt: This is the home page.
+excerpt: Amanzi/ATS Home
 is_front: true
 ---
 
 <Hero 
-  heading="Hero Component"
-  lead="Eius necessitatibus nobis quam repudiandae officia"
-  imageUrl="placeholder.jpg"
-  links={<Button>Learn more</Button>}
+  heading="Amanzi / ATS"
+  lead="A highly modular and extensible computational engine for simulations of flow and reactive transport."
+  imageUrl="farea-composite-2006.png"
+  links={
+    <Button 
+      url="#"
+      type="secondary"
+      style={{
+        boxShadow: '0 0 1px 3px rgba(0, 0, 0, .125)',
+        borderRadius: 30,
+      }}
+    >View Documentation</Button>
+  }
   style={{
-    bg: "muted",
+    bg: "#feca57",
+    fg: "white",
     figure: {
       maxWidth: "70%",
+      align: "right",
     }
   }}
 />
 
 <Section 
-  heading="Edit this page"
+  heading="What is Amanzi/ATS?"
 >
 <Div style={{
   maxWidth: ["none", "none", "60%"]
 }}>
 
-### Add a block
+### About Amanzi
 
-Edit `content/pages/home/index.mdx` to add a card.
+ATS is a numerical model often driven by meteorological data that simulates 
+ground temperatures and hydrological conditions at the surface and subsurface.
 
-```markdown
-<Card 
-  heading="Iusto natus"
-  imageUrl="placeholder.jpg"
->
+### About ATS
 
-Itaque rerum harum amet. Iusto natus corrupti minima esse. Eaque nam voluptates veritatis.
-
-</Card>
-```
-
-### Customize the theme
-
-Update the `primary` value in `src/gatsby-theme-flex/theme.js` to change the color of the button below.
-
-<Button>A button</Button>
+ATS is a numerical model often driven by meteorological data that simulates 
+ground temperatures and hydrological conditions at the surface and subsurface.
 
 </Div>
 </Section>
+
