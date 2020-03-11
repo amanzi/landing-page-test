@@ -3,26 +3,33 @@ require(`dotenv`).config()
 module.exports = {
   siteMetadata: {
     title: `Amanzi/ATS`,
+    author: `Daniel Livingston`,
+    social: {
+      name: `GitHub`,
+      url: `https://demo.com`
+    },
     description: `Landing page for Amanzi/ATS`,
-    siteUrl: process.env.SITE_URL,
+    siteUrl: `https://amanzi.github.io/sphinx-test`,
+    pathPrefix: `sphinx-test`,
+    assetPrefix: `sphinx-test`,
     logo: `logo.png`,
     copyright: `© 2020 Los Alamos National Laboratory. All rights reserved.`,
     headerLinks: [
       {
         title: `Home`,
-        path: `/`,
+        path: `./`,
       },
       {
         title: `Case Studies`,
-        path: `/case-studies`,
+        path: `./case-studies`,
       },
       {
         title: `Gallery`,
-        path: `/gallery`,
+        path: `./gallery`,
       },
       {
         title: `References`,
-        path: `/references`,
+        path: `./references`,
       },
       {
         title: `GitHub`,
@@ -37,6 +44,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-theme-gallery`,
     `gatsby-theme-flex`,
     `gatsby-plugin-sharp`,
     {
