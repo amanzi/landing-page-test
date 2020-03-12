@@ -8,19 +8,9 @@ is_front: true
   heading="Amanzi / ATS"
   lead="A highly modular and extensible computational engine for simulations of flow and reactive transport."
   imageUrl="farea-composite-2006.png"
-  links={
-    <Button 
-      url="#"
-      type="secondary"
-      style={{
-        boxShadow: '0 0 1px 3px rgba(0, 0, 0, .125)',
-        borderRadius: 30,
-      }}
-    >View Documentation</Button>
-  }
+  links={<><Button type="secondary">Get Started</Button> <Button>Learn more</Button></>}
   style={{
     bg: "#feca57",
-    fg: "white",
     figure: {
       maxWidth: "70%",
       align: "right",
@@ -48,3 +38,11 @@ ground temperatures and hydrological conditions at the surface and subsurface.
 </Div>
 </Section>
 
+<Cta 
+  heading="Ready to get started?"
+  lead="Visit the Amanzi/ATS GitHub group to download and build."
+  links={<Button url="https://amanzi.github.io/amanzi">Get Started</Button>}
+  style={{
+    bg: "muted"
+  }}
+/>

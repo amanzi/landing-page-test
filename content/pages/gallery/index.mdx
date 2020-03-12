@@ -3,20 +3,26 @@ title: Gallery
 excerpt: Amanzi/ATS figures and animations.
 ---
 
-<PageHeader 
-  heading="Gallery"
-  lead="Amanzi/ATS figures and animations."
-/>
-
-<MyComponent foo1="bar" foo2="foo" />
-
-<Section
+<Section 
+  heading="Photo and Video Gallery"
+  lead="Tristique ipsum tempor eget"
 >
 <Div style={{
   maxWidth: ["none", "none", "60%"]
 }}>
 
-# Videos
+<Grid columns={[1, 1, 2]} gap={[4, 4, 6, 6, 10]}>
+    <Div>
+        <Image src="placeholder.jpg" style={{mt: [4,8]}}/>
+        <Button url="gallery-photo" style={{fontSize: 20}}>
+            Launch Photo Gallery
+        </Button>
+    </Div>
+    <Div>
+        <Image src="placeholder.jpg" style={{mt: [4,8]}}/>
+        <Button url="gallery-video" style={{fontSize: 20}}>Launch Video Gallery</Button>
+    </Div>
+</Grid>
 
 </Div>
 </Section>

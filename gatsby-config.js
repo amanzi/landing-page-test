@@ -45,12 +45,29 @@ module.exports = {
   },
   plugins: [
     `gatsby-theme-gallery`,
+    {
+      resolve: `gatsby-theme-gallery`,
+      options: {
+        basePath: `/testme`,
+      },
+    },
     `gatsby-theme-flex`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-plugin-mdx",
+      plugins: [`gatsby-remark-images`, `gatsby-remark-videos`],
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
