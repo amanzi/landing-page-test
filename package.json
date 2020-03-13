@@ -25,7 +25,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "dev": "gatsby clean && gatsby develop",
-    "preview": "gatsby build && gatsby serve"
+    "preview": "gatsby build && gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/daniellivingston/amanzi-landing-page.git"
   },
   "devDependencies": {
     "gatsby": "2.19.12",
@@ -35,7 +36,6 @@
   "dependencies": {
     "citation-js": "^0.5.0-alpha.5",
     "gatsby": "2.19.12",
-    "gatsby-remark-bibliography": "https://github.com/ptigas/gatsby-remark-bibliography/tarball/master",
     "gatsby-remark-embed-video": "^2.0.1",
     "gatsby-remark-video": "^1.2.5",
     "gatsby-theme-flex": "^0.2.2",
