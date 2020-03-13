@@ -26,7 +26,7 @@
     "clean": "gatsby clean",
     "dev": "gatsby clean && gatsby develop",
     "preview": "gatsby build && gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/daniellivingston/amanzi-landing-page.git",
+    "deploy": "gatsby build --prefix-paths",
     "test": "echo test"
   },
   "devDependencies": {
