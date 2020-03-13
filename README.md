@@ -44,6 +44,47 @@ This variable is located in `gatsby-config.js`.
 
 ## Developer Notes
 
+### Adding Pages
+
+Every Markdown file under `content/pages` will be compiled into a web page.
+See other pages in that directory to get an idea of how these pages should be formatted.
+
+An example page might be:
+
+```
+---
+title: Example Markdown Page
+excerpt: ok
+---
+
+<Section 
+  heading="Example Markdown Page"
+  lead="Tristique ipsum tempor eget"
+>
+<Div style={{
+  maxWidth: ["none", "none", "60%"]
+}}>
+
+# Markdown Stuff
+
+### Here, I can add Markdown components.
+
+One should add images like this to take advantage of Gatsby features:
+
+<Image src="placeholder.jpg" style={{mt: [4,8]}}/>
+
+Though the regular syntax of `![alt](url)` will still work.
+
+### Another Subsection
+
+Remember to close the Div and Section blocks when you're done.
+We have these to ensure consistent formatting (i.e., centering, body div width).
+
+</Div>
+</Section>
+
+```
+
 ### Components
 
 - Custom components are found under `src/*.js`, and the gallery component is found under `src/components/gallery.js`.
@@ -64,5 +105,5 @@ This variable is located in `gatsby-config.js`.
 ### Assets
 
 - Images under `assets/images` will be pre-processed for fast loading and dynamic sizes
-  - Images under `assets/gallery` will be auto-populated into the image gallery
+  - Images under `content/gallery` will be auto-populated into the image gallery
 - All other assets (videos, BibTex files, etc) should go under `static`
