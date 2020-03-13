@@ -3,9 +3,15 @@ before_script:
   - npm install -g gatsby
 node_js:
   - "10"
+script:
+  - yarn install && yarn run deploy
 deploy:
-  provider: script
-  script: yarn install && yarn run deploy
+  provider: pages
   skip_cleanup: true
+  local_dir: public/
+  github_token: $GITHUB_TOKEN
+  target_branch: gh-pages
+  keep_history: false
+  verbose: true
   on:
     branch: master
