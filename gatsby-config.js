@@ -1,7 +1,7 @@
 require(`dotenv`).config()
 
 module.exports = {
-  pathPrefix: `/amanzi-landing-page`,
+  pathPrefix: `/landing-page-test`,
   siteMetadata: {
     title: `Amanzi/ATS`,
     author: `Daniel Livingston`,

@@ -31,6 +31,17 @@ To test how CI will behave, run
 rm -rf node_modules/ && yarn install && yarn deploy
 ```
 
+### Changing Repos
+
+Before deploying to a web hosting service, the `pathPrefix` variable needs to be
+updated relative to the deployed websites location.
+
+I.e., for `https://amanzi.github.io/landing-page-test`, the `pathPrefix` will be `landing-page-test`.
+
+For `https://amanzi.github.io/`, `pathPrefix` will be `/`.
+
+This variable is located in `gatsby-config.js`.
+
 ## Developer Notes
 
 ### Components
