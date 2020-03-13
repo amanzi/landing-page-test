@@ -1,0 +1,57 @@
+---
+title: Case Study
+excerpt: ok
+---
+
+<Section 
+  heading="Case Study 1"
+  lead="Tristique ipsum tempor eget"
+>
+<Div style={{
+  maxWidth: ["none", "none", "60%"]
+}}>
+
+### Lorem ipsum dolor
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod augue
+vitae nunc posuere aliquam. Morbi scelerisque nunc sit amet ipsum maximus mattis.
+Mauris diam nisi, malesuada sed nunc at, auctor vulputate tortor. Aliquam egestas
+elit et mi malesuada aliquet eu id dui. Suspendisse tincidunt quis lectus sit amet
+ultricies. Sed commodo finibus lectus, ut tempus magna congue eu. Proin tempus,
+metus ac tristique luctus, ipsum nulla ultricies lorem, et egestas enim elit ac orci.
+Aenean sit amet elit ipsum. Duis commodo nulla nec sollicitudin condimentum.
+Nullam eget fermentum neque.
+
+Phasellus convallis sodales turpis, a tristique ipsum tempor eget. Sed vel mi eu ex
+fermentum commodo quis ut turpis. Fusce diam lorem, sodales at nibh vitae, eleifend
+porta massa. Vivamus vel bibendum augue, sed porttitor est. Cras volutpat, augue
+vel commodo placerat, arcu dui euismod massa, ac feugiat nunc turpis at lorem.
+Donec eu turpis faucibus, aliquam lacus in, faucibus orci. Fusce volutpat egestas
+commodo. Donec condimentum vulputate neque ac placerat.
+
+### Some Code
+
+```cpp
+i = 0;
+for (auto it = OwnedVerts.begin(); it != OwnedVerts.end(); ++it) {
+  moab::EntityHandle handle = *it;
+  result = mbcore_->tag_set_data(lid_tag, &handle, 1, &i);
+  ErrorCheck_(result, "Problem getting local ID for vertex");
+  node_id_to_handle[i++] = handle;
+}   
+```
+
+### An image
+
+Use the `Image` component rather than the regular Markdown syntax for images:
+we can then take advantage of Gatsby's "lazy loading" of images.
+
+<Image src="placeholder.jpg" style={{mt: [4,8]}}/>
+
+### References
+
+Enter how to add references here.
+
+</Div>
+</Section>
+

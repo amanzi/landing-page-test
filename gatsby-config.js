@@ -4,10 +4,6 @@ module.exports = {
   siteMetadata: {
     title: `Amanzi/ATS`,
     author: `Daniel Livingston`,
-    social: {
-      name: `GitHub`,
-      url: `https://demo.com`
-    },
     description: `Landing page for Amanzi/ATS`,
     siteUrl: `https://amanzi.github.io/sphinx-test`,
     pathPrefix: `sphinx-test`,
@@ -44,16 +40,12 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-theme-gallery`,
-    {
-      resolve: `gatsby-theme-gallery`,
-      options: {
-        basePath: `/testme`,
-      },
-    },
     `gatsby-theme-flex`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-typescript`,
+    `gatsby-image`,
+    `gatsby`,
     {
       resolve: "gatsby-plugin-mdx",
       plugins: [`gatsby-remark-images`, `gatsby-remark-videos`],
@@ -80,7 +72,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: "content/gallery",
+        name: "content/gallery",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/assets/images`,
+        name: `${__dirname}/assets/images`,
       },
     },
   ],
