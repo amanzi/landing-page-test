@@ -1,13 +1,12 @@
 require(`dotenv`).config()
 
 module.exports = {
+  pathPrefix: `/amanzi-landing-page`,
   siteMetadata: {
     title: `Amanzi/ATS`,
     author: `Daniel Livingston`,
     description: `Landing page for Amanzi/ATS`,
-    siteUrl: `https://amanzi.github.io/sphinx-test`,
-    pathPrefix: `sphinx-test`,
-    assetPrefix: `sphinx-test`,
+    siteUrl: `https://daniellivingston.github.io/amanzi-landing-page`,
     logo: `logo.png`,
     copyright: `© 2020 Los Alamos National Laboratory. All rights reserved.`,
     headerLinks: [
