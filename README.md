@@ -86,7 +86,6 @@ We have these to ensure consistent formatting (i.e., centering, body div width).
 
 </Div>
 </Section>
-
 ```
 
 <a id="components"></a>
