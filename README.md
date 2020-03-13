@@ -1,43 +1,57 @@
-<div>
-<h1>Flex</h1>
-<p>
-A Gatsby starter to kick off a site using the <a href="https://github.com/arshad/gatsby-themes/tree/master/themes/gatsby-theme-flex">gatsby-theme-flex</a> theme.
-</p>
-</div>
+# Amanzi Landing Page Test
 
-<p>
-  <a href="https://flex.arshad.io"><img src="https://img.shields.io/badge/demo-netlify-success" alt="Demo"></a>
-</p>
+Built using Gatsby.js + [MDX](https://mdxjs.com) for docs.
 
-<p>
-  <img src="https://arshad.io/uploads/gatsby-theme-flex.gif" alt="flex preview" />
-</p>
+## Running 
 
-<h3 align="center"><code>gatsby new site arshad/gatsby-starter-flex</code></h3>
+To test locally, run:
 
-## Installation
-
-### Step 1: Run the following command to create a new site
-
-```shell
-gatsby new site arshad/gatsby-starter-flex
+```
+yarn install
 ```
 
-### Step 2: Configure `.env`
+to install any dependencies, and
 
-Copy `.env.example` to `.env` and update `SITE_URL`.
-
-### Step 3: Start developing
-
-```shell
-cd my-site/
+```
 gatsby develop
 ```
 
-## Customization
+to launch the server.
 
-Check out the docs for [gatsby-theme-flex](https://flex.arshad.io/docs).
+A localhost server will be started with live updates as pages and components change.
+The server must be restarted if `gatsby-config.js` changes.
 
-## Support
+If dependencies change, `yarn.lock` and `package.json` must have their updates pushed to the repo as well.
 
-Create an issue on the main repo [@arshad/gatsby-themes](https://github.com/arshad/gatsby-themes/issues).
+### Testing Deployment
+
+To test how CI will behave, run
+
+```
+rm -rf node_modules/ && yarn install && yarn deploy
+```
+
+## Developer Notes
+
+### Components
+
+- Custom components are found under `src/*.js`, and the gallery component is found under `src/components/gallery.js`.
+  - These components can be changed at will.
+  - The theme components can be overridden: e.g., the [footer](https://github.com/arshad/gatsby-themes/blob/master/themes/gatsby-theme-flex/src/layout/footer.js)
+
+### Theming
+
+- This page is built off the Flex theme:
+  - Theme source: https://github.com/arshad/gatsby-themes/tree/master/themes/gatsby-theme-flex
+  - Sample page (rendered): https://flex.arshad.io
+  - Sample page (source): https://github.com/arshad/gatsby-example-flex
+
+- Uses Theme UI for color and component management
+  - Documentation: https://theme-ui.com
+  - Edit the `src/gatsby-theme-flex/theme.js` file to change/update theming
+
+### Assets
+
+- Images under `assets/images` will be pre-processed for fast loading and dynamic sizes
+  - Images under `assets/gallery` will be auto-populated into the image gallery
+- All other assets (videos, BibTex files, etc) should go under `static`
