@@ -2,7 +2,10 @@
 
 Built using Gatsby.js + [MDX](https://mdxjs.com) for docs.
 
-## Running 
+[Running](#running) | [Dev Notes](#devnotes) | [Components](#components)
+
+<a id="running"></a>
+## Running
 
 To test locally, run:
 
@@ -42,6 +45,7 @@ For `https://amanzi.github.io/`, `pathPrefix` will be `/`.
 
 This variable is located in `gatsby-config.js`.
 
+<a id="devnotes"></a>
 ## Developer Notes
 
 ### Adding Pages
@@ -85,6 +89,7 @@ We have these to ensure consistent formatting (i.e., centering, body div width).
 
 ```
 
+<a id="components"></a>
 ### Components
 
 - Custom components are found under `src/*.js`, and the gallery component is found under `src/components/gallery.js`.
