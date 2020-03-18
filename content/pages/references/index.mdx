@@ -6,24 +6,6 @@ excerpt: Amanzi/ATS publications and conference proceedings
 import bib1 from '!!raw-loader!../../../static/database.bib';
 import bib2 from '!!raw-loader!../../../static/database2.bib';
 
-export const myJSON = {
-  "../../../static/logo.png": "value1",
-  "https://images.unsplash.com/photo-1551833726-deb5e781c68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80": "value2",
-  "images/mytestphoto.png": "value3"
-};
-
-export const myJSON2 = {
-  "images/mytestphoto1.png": "cap1",
-  "images/mytestphoto2.png": "cap666",
-  "images/mytestphoto3.png": "cap3",
-  "images/mytestphoto4.png": "cap3",
-  "images/mytestphoto5.png": "cap3",
-  "images/mytestphoto6.png": "cap3",
-  "images/mytestphoto7.png": "cap3",
-  "images/mytestphoto8.png": "cap3",
-  "images/mytestphoto9.png": "cap3",
-  "images/mytestphoto10.png": "cap3"
-};
 
 <PageHeader 
   heading="References"
@@ -40,9 +22,6 @@ export const myJSON2 = {
 ### Conference Proceedings
 
 <BibTex bibInput={bib2} template="harvard1" />
-
-<PhotoGallery heading="Hello world" photos={myJSON} />
-<PhotoGallery heading="Hello world 2" photos={myJSON2} />
 
 </Div>
 </Section>

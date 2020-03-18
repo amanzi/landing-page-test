@@ -3,13 +3,50 @@ title: Gallery
 excerpt: Amanzi/ATS figures and animations.
 ---
 
+export const photoGallery1 = {
+  "photo-gallery/Amanzi_DFN_fig1a.png": "Amanzi DFN Figure 1(a)",
+  "photo-gallery/Amanzi_DFN_fig2a.png": "Amanzi DFN Figure 2(a)",
+  "photo-gallery/coweeta_steadystate_hires00001.png": "Coweeta Steady-State"
+};
+
+export const photoGallery2 = {
+  "photo-gallery/barrow-movie-speed-0122-8k.png": "Barrow 01",
+  "photo-gallery/barrow-movie-water-0122-8k.png": "Barrow 02",
+  "photo-gallery/farea-composite-2006.png": "F-Area Composite 2006",
+  "photo-gallery/farea-composite-2026.png": "F-Area Composite 2026",
+  "photo-gallery/nnss-2030-blk.png": "NNSS 2030",
+  "photo-gallery/nnss-2030-composite-blk.png": " NNSS 2030 Composite"
+};
+
+<PageHeader 
+  heading="Gallery"
+  lead="Amanzi/ATS figures and animations"
+/>
+
 <Section 
-  heading="Photo and Video Gallery"
-  lead="Tristique ipsum tempor eget"
+  heading="Photo Gallery"
 >
 <Div style={{
-  maxWidth: ["none", "none", "60%"]
+  maxWidth: ["none", "none", "80%"]
 }}>
+
+<PhotoGallery heading="Category 1" photos={photoGallery1} />
+<PhotoGallery heading="Category 2" photos={photoGallery2} />
+
+</Div>
+</Section>
+
+
+
+
+<Section 
+  heading="Video Gallery"
+>
+<Div style={{
+  maxWidth: ["none", "none", "80%"]
+}}>
+
+<VideoGallery heading="Category 1" photos={photoGallery1} />
 
 <Grid columns={[1, 1, 2]} gap={[4, 4, 6, 6, 10]}>
     <Div>
@@ -26,4 +63,3 @@ excerpt: Amanzi/ATS figures and animations.
 
 </Div>
 </Section>
-
