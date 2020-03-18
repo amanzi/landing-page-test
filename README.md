@@ -112,6 +112,19 @@ We have these to ensure consistent formatting (i.e., centering, body div width).
   - Images under `content/gallery` will be auto-populated into the image gallery
 - All other assets (videos, BibTex files, etc) should go under `static`
 
+### Videos
+
+Videos and video thumbnails are found under `static/video-gallery`.
+
+- Videos must be in MP4 format
+  - FFMPEG can be used for conversion:
+    - `ffmpeg -i ${INPUT} -vcodec h264 -acodec mp2 -b:a 32k -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ${EXPORT}`
+
+- Videos require a thumbnail image as well
+  - This is displayed when the video hasn't started loading yet
+  - FFMPEG can also create thumbnail images:
+    - `ffmpeg -i ${INPUT_VIDEO} -vf  "thumbnail" -frames:v 1 ${OUT_IMAGE}`
+
 <a id="help"></a>
 ## Help
 
