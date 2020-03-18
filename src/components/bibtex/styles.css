@@ -1,0 +1,19 @@
+/*
+ * 'csl-entry' is used for 'apa' and 'harvard1' template styles.
+ */
+.csl-entry {
+  margin-bottom: 10px;
+}
+
+/*
+ * These two are used for the 'vancouver' template style.
+ * 'csl-left-margin' are the numbers, 'csl-right-inline'
+ * is the citation.
+ */
+.csl-right-inline {
+    display: inline;
+}
+
+.csl-left-margin {
+    display: inline;
+}

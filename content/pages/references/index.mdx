@@ -3,6 +3,9 @@ title: References
 excerpt: Amanzi/ATS publications and conference proceedings
 ---
 
+import bib1 from '!!raw-loader!../../../static/database.bib';
+import bib2 from '!!raw-loader!../../../static/database2.bib';
+
 export const myJSON = {
   "../../../static/logo.png": "value1",
   "https://images.unsplash.com/photo-1551833726-deb5e781c68f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80": "value2",
@@ -30,7 +33,13 @@ export const myJSON2 = {
 <Section>
 <Div style={{maxWidth: ["none", "none", "60%"]}}>
 
-<BibTex />
+### Journal Articles
+
+<BibTex bibInput={bib1} template="harvard1" />
+
+### Conference Proceedings
+
+<BibTex bibInput={bib2} template="harvard1" />
 
 <PhotoGallery heading="Hello world" photos={myJSON} />
 <PhotoGallery heading="Hello world 2" photos={myJSON2} />

@@ -2,7 +2,7 @@
 
 Built using Gatsby.js + [MDX](https://mdxjs.com) for docs.
 
-[Running](#running) | [Dev Notes](#devnotes) | [Components](#components)
+[Running](#running) | [Dev Notes](#devnotes) | [Components](#components) | [Help](#help)
 
 <a id="running"></a>
 ## Running
@@ -111,3 +111,16 @@ We have these to ensure consistent formatting (i.e., centering, body div width).
 - Images under `assets/images` will be pre-processed for fast loading and dynamic sizes
   - Images under `content/gallery` will be auto-populated into the image gallery
 - All other assets (videos, BibTex files, etc) should go under `static`
+
+<a id="help"></a>
+## Help
+
+In general, this should be pretty straightforward to add new pages and edit
+content.
+
+However, Gatsby.js and React.js have some small "gotchas" for those not familiar
+with them. Please open an issue or [email me](mailto:livingston@lanl.gov) if
+you're having difficulties. 99 times of 100, the solution will be straightforward
+yet hidden from those without intimate knowledge of React.
+
+
