@@ -108,9 +108,14 @@ We have these to ensure consistent formatting (i.e., centering, body div width).
 
 ### Assets
 
-- Images under `assets/images` will be pre-processed for fast loading and dynamic sizes
-  - Images under `content/gallery` will be auto-populated into the image gallery
-- All other assets (videos, BibTex files, etc) should go under `static`
+- All assets (videos, BibTex files, etc) should go under `static`
+
+### Images
+
+- All images should go under `assets/images`, except those being used in a photo gallery.
+- Photo gallery images go under `static/photo-gallery`.
+- Photo gallery images will also need a thumbnail image to improve loading times.
+- `brew install imagemagick`
 
 ### Videos
 
@@ -123,7 +128,9 @@ Videos and video thumbnails are found under `static/video-gallery`.
 - Videos require a thumbnail image as well
   - This is displayed when the video hasn't started loading yet
   - FFMPEG can also create thumbnail images:
-    - `ffmpeg -i ${INPUT_VIDEO} -vf  "thumbnail" -frames:v 1 ${OUT_IMAGE}`
+    - This command can be used to easily create thumbnails:
+      - `mogrify -resize 300 *.png`
+      - Installed using `brew install imagemagick`
 
 <a id="help"></a>
 ## Help
