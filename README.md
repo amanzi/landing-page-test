@@ -115,7 +115,9 @@ We have these to ensure consistent formatting (i.e., centering, body div width).
 - All images should go under `assets/images`, except those being used in a photo gallery.
 - Photo gallery images go under `static/photo-gallery`.
 - Photo gallery images will also need a thumbnail image to improve loading times.
-- `brew install imagemagick`
+  - Thumbnails can easily be created with the `mogrify` command:
+      - `mogrify -resize 300 *.png`
+      - Installed using `brew install imagemagick`
 
 ### Videos
 
@@ -129,8 +131,7 @@ Videos and video thumbnails are found under `static/video-gallery`.
   - This is displayed when the video hasn't started loading yet
   - FFMPEG can also create thumbnail images:
     - This command can be used to easily create thumbnails:
-      - `mogrify -resize 300 *.png`
-      - Installed using `brew install imagemagick`
+      - `ffmpeg -i ${INPUT_VIDEO} -vf  "thumbnail" -frames:v 1 ${OUT_IMAGE}`
 
 <a id="help"></a>
 ## Help
