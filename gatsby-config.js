@@ -15,8 +15,8 @@ module.exports = {
         path: `./`,
       },
       {
-        title: `Case Studies`,
-        path: `./case-studies`,
+        title: `About`,
+        path: `./about`,
       },
       {
         title: `Gallery`,
@@ -27,8 +27,8 @@ module.exports = {
         path: `./references`,
       },
       {
-        title: `GitHub`,
-        path: `https://github.com/amanzi`,
+        title: `Downloads`,
+        path: `./downloads`,
       },
     ],
     footerLinks: [
