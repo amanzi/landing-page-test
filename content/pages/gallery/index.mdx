@@ -18,13 +18,28 @@ export const photoGallery2 = {
   "photo-gallery/nnss-2030-composite-blk.png": ["NNSS 2030 Composite", "photo-gallery/thumbnails/nnss-2030-composite-blk.png"]
 };
 
-export const videoGallery = {
-  "video-gallery/videos/Jaramillo_postfire.mp4": ["Jaramillo Postfire", "video-gallery/thumbnails/Jaramillo_postfire.png"],
-  "video-gallery/videos/coupled-sss_high-perm.mp4": ["Coupled SSS High Perm", "video-gallery/thumbnails/coupled-sss_high-perm.png"],
-  "video-gallery/videos/coupled_water-poly40_adjoin.mp4": ["Coupled Water Poly40 Adjoin", "video-gallery/thumbnails/coupled_water-poly40_adjoin.png"],
-  "video-gallery/videos/thermal_overland-ice_dam.mp4": ["Therzal Overland Ice Dam", "video-gallery/thumbnails/thermal_overland-ice_dam.png"],
-  "video-gallery/videos/transport-converted.mp4": ["Transport Converted", "video-gallery/thumbnails/transport-converted.png"]
-}
+export const videos = [
+  {
+    thumbnail: `video-gallery/thumbnails/Jaramillo_postfire.png`,
+    embedUrl: 'video-gallery/videos/Jaramillo_postfire.mp4',
+    description: 'Jaramillo Postfire',
+  },
+  {
+    thumbnail: `video-gallery/thumbnails/coupled_water-poly40_adjoin.png`,
+    embedUrl: 'video-gallery/videos/coupled_water-poly40_adjoin.mp4',
+    description: 'Coupled Water Poly40 Adjoin',
+  },
+  {
+    thumbnail: `video-gallery/thumbnails/thermal_overland-ice_dam.png`,
+    embedUrl: 'video-gallery/videos/thermal_overland-ice_dam.mp4',
+    description: 'Therzal Overland Ice Dam',
+  },
+  {
+    thumbnail: `video-gallery/thumbnails/transport-converted.png`,
+    embedUrl: 'video-gallery/videos/transport-converted.mp4',
+    description: 'Transport Converted',
+  },
+];
 
 <PageHeader 
   heading="Gallery"
@@ -57,7 +72,7 @@ export const videoGallery = {
   maxWidth: ["none", "none", "80%"]
 }}>
 
-<VideoGallery videos={videoGallery} />
+<VideoGallery videos={videos} />
 
 </Div>
 </Section>
