@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Amanzi/ATS`,
     author: `Daniel Livingston`,
+    laur: `LA-UR: ABCD-EFGH`,
     description: `Landing page for Amanzi/ATS`,
     siteUrl: `https://daniellivingston.github.io/amanzi-landing-page`,
     logo: `logo.png`,

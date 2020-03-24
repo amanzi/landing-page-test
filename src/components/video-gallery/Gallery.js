@@ -7,17 +7,16 @@ import "video-react/dist/video-react.css";
 
 class VideoGallery extends React.Component {
 
-    constructor(props) {
-      super(props);
+  constructor(props) {
+    super(props);
 
-      this.videos = this.props.videos
+    this.videos = this.props.videos
 
-      for (var i = 0; i < this.videos.length; i++) {
-        this.videos[i].original = this.videos[i].thumbnail;
-        this.videos[i].renderItem = this._renderVideo.bind(this);
-      }
-
+    for (var i = 0; i < this.videos.length; i++) {
+      this.videos[i].original = this.videos[i].thumbnail;
+      this.videos[i].renderItem = this._renderVideo.bind(this);
     }
+  }
 
   _toggleShowVideo(url) {
     this.state.showVideo[url] = !Boolean(this.state.showVideo[url]);

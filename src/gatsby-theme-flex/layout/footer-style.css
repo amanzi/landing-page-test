@@ -1,0 +1,307 @@
+/*! CSS Used from: https://emvi.com/static/style/flexboxgrid.css?version=20.3.10 */
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 16px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.row {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col-xs-6,
+.col-xs-12 {
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.col-xs-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-xs-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 512px) {
+    .col-sm-4,
+    .col-sm-12 {
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    .col-sm-4 {
+        -ms-flex-preferred-size: 33.33333333%;
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+    }
+    .col-sm-12 {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-md-2,
+    .col-md-3,
+    .col-md-offset-0,
+    .col-md-offset-1 {
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    .col-md-2 {
+        -ms-flex-preferred-size: 16.66666667%;
+        flex-basis: 16.66666667%;
+        max-width: 16.66666667%;
+    }
+    .col-md-3 {
+        -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    .col-md-offset-0 {
+        margin-left: 0;
+    }
+    .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-lg-2,
+    .col-lg-4,
+    .col-lg-offset-1 {
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    .col-lg-2 {
+        -ms-flex-preferred-size: 16.66666667%;
+        flex-basis: 16.66666667%;
+        max-width: 16.66666667%;
+    }
+    .col-lg-4 {
+        -ms-flex-preferred-size: 33.33333333%;
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+    }
+    .col-lg-offset-1 {
+        margin-left: 8.33333333%;
+    }
+}
+
+
+/*! CSS Used from: https://emvi.com/static/website.css?version=20.3.10 */
+
+::-moz-selection {
+    background: rgba(26, 140, 255, 0.996);
+    color: var(--white-100);
+}
+
+::-webkit-selection {
+    background: rgba(26, 140, 255, 0.996);
+    color: var(--white-100);
+}
+
+::selection {
+    background: rgba(26, 140, 255, 0.996);
+    color: var(--white-100);
+}
+
+body,
+div,
+a,
+img,
+ul,
+li,
+footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font: inherit;
+    color: var(--black-100);
+    text-decoration: none;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: var(--black-100-to-grey-20);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin: 0 0 8px 0;
+}
+
+@media only screen and (max-width: 511px) {
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+body *::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+body *::-webkit-scrollbar-thumb {
+    height: 64px;
+    width: 64px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 8px;
+    background-color: rgba(121, 124, 128, 0.4);
+}
+
+body *::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+body *::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+p {
+    color: var(--black-to-white);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--grey-60-to-grey-20);
+}
+
+a {
+    cursor: pointer;
+}
+
+.background--black {
+    background-color: #000000;
+}
+
+.footer {
+    position: sticky;
+    width: 100%;
+    padding: 64px 0;
+    color: #7A7C80;
+}
+
+.footer--icon {
+    height: 38px;
+    width: 24px;
+    margin: 16px 16px 32px 0;
+}
+
+.footer--disclaimer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--grey-50);
+    margin-bottom: 16px;
+    padding-right: 8px;
+}
+
+.footer--headline {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ffff;
+    text-transform: uppercase;
+    margin: 16px 0;
+    white-space: nowrap;
+}
+
+.footer--links {
+    margin-bottom: 16px;
+}
+
+.footer--links li a {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--grey-50);
+    transition: color 0.4s;
+}
+
+.footer--links li a:hover {
+    color: #ffff;
+}
+
+@media only screen and (max-width: 1023px) {
+    p {
+        font-size: 18px;
+    }
+    .footer {
+        padding: 48px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 512px;
+    }
+}
+
+@media only screen and (max-width: 511px) {
+    p {
+        font-size: 16px;
+    }
+}
