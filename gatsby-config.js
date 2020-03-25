@@ -45,6 +45,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-typescript`,
     `gatsby-image`,
+    `gatsby-plugin-sass`,
     `gatsby`,
     {
       resolve: "gatsby-plugin-mdx",
