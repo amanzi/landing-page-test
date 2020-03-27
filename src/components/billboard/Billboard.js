@@ -21,7 +21,14 @@ const Billboard = ({heading, subHeading, lead}) => {
   let children = []
 
   for (let i = 0; i < 6; i++) {
-    children.push(<li><Image src={images[i]} style={{width: "100px", height: "100px"}}/></li>)
+    children.push(
+      <li>
+        <Image 
+          src={images[i]} 
+          style={{width: "120px", height: "120px"}}
+        />
+      </li>
+    );
   }
 
   return (

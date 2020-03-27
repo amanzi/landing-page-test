@@ -1,8 +1,8 @@
 /* line 47, ../circle.scss */
 .circle-container {
   position: relative;
-  width: 24em;
-  height: 24em;
+  width: 480px;
+  height: 450px;
   border-radius: 50%;
   padding: 0;
   list-style: none;
@@ -15,8 +15,8 @@
   top: 50%;
   left: 50%;
   margin: -3em;
-  width: 6em;
-  height: 6em;
+  width: 120px;
+  height: 120px;
 }
 /* line 38, ../circle.scss */
 .circle-container > *:nth-of-type(1) {
@@ -47,10 +47,11 @@
   display: block;
   max-width: 100%;
   border-radius: 50%;
-  filter: grayscale(60%);
+  /*filter: grayscale(60%);*/
   border: solid 2px #4E76EE;
   transition: .4s;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
+  opacity: 1;
 }
 /* line 59, ../circle.scss */
 .circle-container figure:hover {

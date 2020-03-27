@@ -45,17 +45,19 @@
 }
 
 .circle-container {
-  @include on-circle($item-count: 6, $circle-size: 24em, $item-size: 6em); 
+  /*@include on-circle($item-count: 6, $circle-size: 24em, $item-size: 6em); */
+  @include on-circle($item-count: 6, $circle-size: 480px, $item-size: 120px); 
   margin: 5em auto 0;
 
   figure { 
     display: block; 
     max-width: 100%; 
     border-radius: 50%;
-    filter: grayscale(100%);
+    /*filter: grayscale(60%);*/
     border: solid 2px #4E76EE;
     transition: .4s;
-    opacity: 0.5;
+    ///opacity: 0.5;
+    opacity: 1;
      
     &:hover {
       filter: grayscale(0);
