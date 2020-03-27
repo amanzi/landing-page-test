@@ -136,7 +136,6 @@
     color: var(--white-100);
 }
 
-body,
 div,
 a,
 img,
@@ -158,10 +157,6 @@ footer {
 
 footer {
     display: block;
-}
-
-body {
-    line-height: 1;
 }
 
 ul {
@@ -235,14 +230,14 @@ a {
 }
 
 .background--black {
-    background-color: #000000;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 .footer {
     position: sticky;
     width: 100%;
     padding: 64px 0;
-    color: #7A7C80;
+    color: #2B3750;
 }
 
 .footer--icon {
@@ -264,7 +259,7 @@ a {
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    color: #ffff;
+    color: black;
     text-transform: uppercase;
     margin: 16px 0;
     white-space: nowrap;
@@ -282,7 +277,8 @@ a {
 }
 
 .footer--links li a:hover {
-    color: #ffff;
+    color: black;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -290,7 +286,7 @@ a {
         font-size: 18px;
     }
     .footer {
-        padding: 48px 0;
+        padding: 28px 0;
     }
 }
 
