@@ -18,6 +18,20 @@ const PhotoGallery = ({photos}) => {
   groupID++;
   const groupStr = "group" + groupID;
 
+  function addPhotoItem(item,idx) {
+    return (
+      <div>
+        <PhotoItem 
+          key={idx} 
+          image={item.photo} 
+          group={groupStr} 
+          caption={item.caption} 
+          thumb={item.thumbnail} 
+        />
+      </div>
+    );
+  }
+
   return (
     <LightgalleryProvider
       onAfterSlide={() => {
@@ -31,12 +45,12 @@ const PhotoGallery = ({photos}) => {
       plugins={["lg-thumbnail.js"]}
     >
       <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
-      {
-        Object.keys(photos).map((key, idx) => ( 
-          <div>
-            <PhotoItem key={idx} image={key} group={groupStr} caption={photos[key][0]} thumb={photos[key][1]} />
-          </div>
-        ))
+      { 
+        photos.map((item, idx) => {
+          return (
+            addPhotoItem(item,idx)
+          )}
+        ) 
       }
       </div>
     </LightgalleryProvider>
