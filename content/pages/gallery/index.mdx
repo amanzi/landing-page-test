@@ -18,37 +18,12 @@ export const photoGallery2 = {
   "photo-gallery/nnss-2030-composite-blk.png": ["NNSS 2030 Composite", "photo-gallery/thumbnails/nnss-2030-composite-blk.png"]
 };
 
-export const videos = [
-  {
-    thumbnail: `video-gallery/thumbnails/Jaramillo_postfire.png`,
-    embedUrl: 'video-gallery/videos/Jaramillo_postfire.mp4',
-    description: 'Jaramillo Postfire',
-  },
-  {
-    thumbnail: `video-gallery/thumbnails/coupled_water-poly40_adjoin.png`,
-    embedUrl: 'video-gallery/videos/coupled_water-poly40_adjoin.mp4',
-    description: 'Coupled Water Poly40 Adjoin',
-  },
-  {
-    thumbnail: `video-gallery/thumbnails/thermal_overland-ice_dam.png`,
-    embedUrl: 'video-gallery/videos/thermal_overland-ice_dam.mp4',
-    description: 'Therzal Overland Ice Dam',
-  },
-  {
-    thumbnail: `video-gallery/thumbnails/transport-converted.png`,
-    embedUrl: 'video-gallery/videos/transport-converted.mp4',
-    description: 'Transport Converted',
-  },
-];
-
 <PageHeader 
-  heading="Gallery"
-  lead="Amanzi/ATS figures and animations"
+  heading="Photo Gallery"
+  lead="Amanzi/ATS Figures"
 />
 
-<Section 
-  heading="Photo Gallery"
->
+<Section>
 <Div style={{
   maxWidth: ["none", "none", "80%"]
 }}>
@@ -63,17 +38,3 @@ export const videos = [
 
 </Div>
 </Section>
-
-
-<Section 
-  heading="Video Gallery"
->
-<Div style={{
-  maxWidth: ["none", "none", "80%"]
-}}>
-
-<VideoGallery videos={videos} />
-
-</Div>
-</Section>
-
