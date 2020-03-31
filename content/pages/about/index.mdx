@@ -4,54 +4,29 @@ excerpt: ok
 ---
 
 <Section 
-  heading="About"
-  lead="Tristique ipsum tempor eget"
+  heading="About Amanzi/ATS"
+  lead="Managing Complexity to Accelerate Understanding"
 >
 <Div style={{
   maxWidth: ["none", "none", "60%"]
 }}>
 
-### Lorem ipsum dolor
+### Amanzi
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod augue
-vitae nunc posuere aliquam. Morbi scelerisque nunc sit amet ipsum maximus mattis.
-Mauris diam nisi, malesuada sed nunc at, auctor vulputate tortor. Aliquam egestas
-elit et mi malesuada aliquet eu id dui. Suspendisse tincidunt quis lectus sit amet
-ultricies. Sed commodo finibus lectus, ut tempus magna congue eu. Proin tempus,
-metus ac tristique luctus, ipsum nulla ultricies lorem, et egestas enim elit ac orci.
-Aenean sit amet elit ipsum. Duis commodo nulla nec sollicitudin condimentum.
-Nullam eget fermentum neque.
+Amanzi provides a flexible and extensible parallel flow and reactive transport simulation capability for environmental applications.  It includes general polyhedral mesh infrastructure, which leverages MSTK, advanced discretizations of process models, including traditional finite volume schemes, mimetic finite differences, and nonlinear finite volumes.  In addition, it provides advanced nonlinear solvers, such as Nonlinear Krylov Acceleration (NKA) and Anderson Acceleration, and leverages Trilinos-ML and Hypre Algebraic Multigrid for scalable solvers. The reaction of contaminants and minerals carried by the flow through the surrounding rock and soil is modeled through a general software interface called Alquimia that allows Amanzi to interface with a variety of powerful geochemistry engines including PFLOTRAN and CrunchFlow. The code is parallel and leverages open-source parallel frameworks such as Trilinos, PETSc.  Amanzi is used to model contaminant migration at various DOE waste sites (e.g., Nevada National Security Site, and Savannah River), and is generally applicable to groundwater contaminant migration under partially saturated, nonisothermal conditions and its interaction with surface water.   
 
-Phasellus convallis sodales turpis, a tristique ipsum tempor eget. Sed vel mi eu ex
-fermentum commodo quis ut turpis. Fusce diam lorem, sodales at nibh vitae, eleifend
-porta massa. Vivamus vel bibendum augue, sed porttitor est. Cras volutpat, augue
-vel commodo placerat, arcu dui euismod massa, ac feugiat nunc turpis at lorem.
-Donec eu turpis faucibus, aliquam lacus in, faucibus orci. Fusce volutpat egestas
-commodo. Donec condimentum vulputate neque ac placerat.
+### Arcos and Meshing Workflows
 
-### Some Code
+The multiphysics framework in Amanzi is called Arcos, and it provides modelers with the flexibility they need to creatively decompose complex problems and explore a variety of mixed-dimensional model configurations to develop understanding and make predictions of environmental systems. In particular, Arcos provides flexibility for hierarchical weak and strong coupling of processes with subcycling of mixed dimensions. This capability in conjuction with its powerful mesh infrastructure enables the splitting and subsetting of meshes to unleash creative conceptual modelin.  Applications include, coupling flow and transport on discrete-fracture-networks (DFNs) and the background matrix; integrated hydrology coupling surface and subsurface processes; an intermediate scale thermal hydrology model of polygonal tundra based on one-dimensional columns coupled to the two-dimensional surface.
 
-```cpp
-i = 0;
-for (auto it = OwnedVerts.begin(); it != OwnedVerts.end(); ++it) {
-  moab::EntityHandle handle = *it;
-  result = mbcore_->tag_set_data(lid_tag, &handle, 1, &i);
-  ErrorCheck_(result, "Problem getting local ID for vertex");
-  node_id_to_handle[i++] = handle;
-}   
-```
+### Advanced Terrestrial Simulator (ATS)
 
-### An image
+The Advanced Terrestrial Simulator is a code for solving ecosystem-based, integrated, distributed hydrology.  It builds on the multi-physics framework and toolsets (mesh infrastructure, discretizations, solvers) provided by Amanzi and is a key driver of development of the flexible multiphysics framework Acros. Capabilities are largely based on solving various forms of Richards equation coupled to a surface flow equation, along with the needed sources and sinks for ecosystem and climate models.  This can (but need not) include thermal processes (especially ice for frozen soils), evapo-transpiration, albedo-driven surface energy balances, snow, biogeochemistry, plant dynamics, deformation, transport, and much more. It is unique in its thermal integrated hydrology capabilities, which includes thermal energy with freeze/thaw processes in both the surface and subsurface water, and its reactive transport capabilities, which are also coupled in both surface and subsurface water.
 
-Use the `Image` component rather than the regular Markdown syntax for images:
-we can then take advantage of Gatsby's "lazy loading" of images.
+### Open Source / Open Development
 
-<Image src="placeholder.jpg" style={{mt: [4,8]}}/>
+Amanzi/ATS is jointly developed by LANL, LBNL, and PNNL, and ORNL as an open source project under the three-clause BSD license.
 
-### References
-
-See `content/pages/references/index.mdx` to see how to add references to an 
-MDX file.
 
 </Div>
 </Section>
