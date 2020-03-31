@@ -1,0 +1,55 @@
+{
+    "photoGalleryMF": [
+        {
+            "thumbnail": "photo-gallery/thumbnails/Amanzi_DFN_fig1a.png",
+            "photo": "photo-gallery/Amanzi_DFN_fig1a.png",
+            "caption": "Amanzi DFN Figure 1(a)"
+        },
+        {
+            "thumbnail": "photo-gallery/thumbnails/Amanzi_DFN_fig2a.png",
+            "photo": "photo-gallery/Amanzi_DFN_fig2a.png",
+            "caption": "Amanzi DFN Figure 2(aaaa)"
+        }
+    ],
+    "photoGalleryRTM": [
+        {
+            "thumbnail": "photo-gallery/thumbnails/farea-composite-2006.png",
+            "photo": "photo-gallery/farea-composite-2006.png",
+            "caption": "F-Area 2006"
+        },
+        {
+            "thumbnail": "photo-gallery/thumbnails/farea-composite-2026.png",
+            "photo": "photo-gallery/farea-composite-2026.png",
+            "caption": "F-Area 2026"
+        },
+        {
+            "thumbnail": "photo-gallery/thumbnails/nnss-2030-blk.png",
+            "photo": "photo-gallery/nnss-2030-blk.png",
+            "caption": "NNSS 2030"
+        },
+        {
+            "thumbnail": "photo-gallery/thumbnails/nnss-2030-composite-blk.png",
+            "photo": "photo-gallery/nnss-2030-composite-blk.png",
+            "caption": "NNSS 2030 Composite"
+        }
+    ],
+    "photoGalleryArctic": [
+        {
+            "thumbnail": "photo-gallery/thumbnails/barrow-movie-speed-0122-8k.png",
+            "photo": "photo-gallery/barrow-movie-speed-0122-8k.png",
+            "caption": "Barrow 01"
+        },
+        {
+            "thumbnail": "photo-gallery/thumbnails/barrow-movie-water-0122-8k.png",
+            "photo": "photo-gallery/barrow-movie-water-0122-8k.png",
+            "caption": "Barrow 02"
+        }
+    ],
+    "photoGalleryWatersheds": [
+        {
+            "thumbnail": "photo-gallery/thumbnails/coweeta_steadystate_hires00001.png",
+            "photo": "photo-gallery/coweeta_steadystate_hires00001.png",
+            "caption": "Coweeta Steady-State"
+        }
+    ]
+}
