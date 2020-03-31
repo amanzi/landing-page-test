@@ -39,8 +39,7 @@ const Billboard = ({heading, subHeading, lead}) => {
         </ul>
       </div>
       <div style={{zIndex: "1", position: "absolute",width: "100%"}}>
-        <Section heading={heading} subHeading={subHeading} lead={lead} style={{width: "100%"}}>
-        </Section>
+        <Section defaultPadding heading={heading} subHeading={subHeading} lead={lead} style={{width: "100%"}}/>
       </div>
     </div>
   );
