@@ -29,7 +29,6 @@ const Footer = ({ copyright, footerLinks, laur }) => {
             <ul className="footer--links">
                 <li><a href="https://github.com/amanzi/amanzi">GitHub</a></li>
                 <li><a href="https://amanzi.github.io/amanzi">Documentation</a></li>
-                <li><a href="https://amanzi.github.io/amanzi">User Guide</a></li>
             </ul>
         </div>
         <div className="col-md-2 col-sm-4 col-xs-12">
@@ -37,7 +36,6 @@ const Footer = ({ copyright, footerLinks, laur }) => {
             <ul className="footer--links">
                 <li><a href="https://github.com/amanzi/ats">GitHub</a></li>
                 <li><a href="https://amanzi.github.io/ats">Documentation</a></li>
-                <li><a href="https://amanzi.github.io/ats">User Guide</a></li>
             </ul>
         </div>
       </div>
