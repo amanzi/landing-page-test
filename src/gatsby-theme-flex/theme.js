@@ -7,15 +7,6 @@ export default {
     primary: '#4177F6',
     secondary: '#5E5E5E',
     muted: '#F6F6F6',
-    modes: {
-      dark: {
-        text: '#fff',
-        background: '#000',
-        primary: '#0cf',
-        secondary: '#09c',
-        muted: '#111',
-      },
-    },
   },
   footer: {
     background: '#3B3B3B',
