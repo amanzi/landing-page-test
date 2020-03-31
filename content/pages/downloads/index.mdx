@@ -3,32 +3,61 @@ title: Downloads
 excerpt: ok
 ---
 
-<Section 
+<PageHeader 
   heading="Downloads"
-  lead="Tristique ipsum tempor eget"
->
+  lead="Source and Docker distributions"
+  style={{
+    bg: "transparent"
+  }}
+/>
+
+<Section>
 <Div style={{
-  maxWidth: ["none", "none", "60%"]
+  maxWidth: ["90%"],
+  minWidth: ["80%"]
 }}>
 
-### Lorem ipsum dolor
+<Grid columns={[1, 2]}>
+<Div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod augue
-vitae nunc posuere aliquam. Morbi scelerisque nunc sit amet ipsum maximus mattis.
-Mauris diam nisi, malesuada sed nunc at, auctor vulputate tortor. Aliquam egestas
-elit et mi malesuada aliquet eu id dui. Suspendisse tincidunt quis lectus sit amet
-ultricies. Sed commodo finibus lectus, ut tempus magna congue eu. Proin tempus,
-metus ac tristique luctus, ipsum nulla ultricies lorem, et egestas enim elit ac orci.
-Aenean sit amet elit ipsum. Duis commodo nulla nec sollicitudin condimentum.
-Nullam eget fermentum neque.
+## Amanzi
+### Source code
 
-<br/>
+<Button url="https://github.com/amanzi/amanzi/releases">Download: Latest Release</Button>
 
-<div style={{display: "flex", justifyContent: "center"}}>
-  <ButtonRoll text="Amanzi" url="https://github.com/amanzi/amanzi"/>
-  <ButtonRoll text="ATS" url="https://github.com/amanzi/ats"/>
-</div>
+### Git repository
 
+```sh
+$ git clone https://github.com/amanzi/amanzi.git
+```
+
+### DockerHub
+
+```sh
+$ docker pull amanzi:latest
+```
+</Div>
+<Div>
+
+## ATS
+
+### Source code
+
+<Button src="https://github.com/amanzi/ats/releases">Download: Latest Release</Button>
+
+### Git repository
+
+```sh
+$ git clone https://github.com/amanzi/ats.git
+```
+
+### DockerHub
+
+```sh
+$ docker pull ats:latest
+```
+</Div>
+</Grid>
 </Div>
 </Section>
 
